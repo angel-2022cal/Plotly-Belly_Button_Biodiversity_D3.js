@@ -3,7 +3,7 @@ function init() {
 
     d3.json("samples.json").then((data) => {
         console.log(data);
-        var sampleNames = data.Names; 
+        var sampleNames = data.names; 
         sampleNames.forEach(element => {
             selector
                 .append("option")
